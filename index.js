@@ -83,7 +83,7 @@ app.post('/api/persons', (request, response) => {
   const person = {
     id: id,
     name: body.name,
-    important: body.number || false,
+    number: body.number || false,
   };
 
   persons = persons.concat(person);
