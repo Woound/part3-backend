@@ -33,7 +33,7 @@ if (process.argv.length === 3) {
     number: process.argv[4],
   });
 
-  person.save().then(result => {
+  person.save().then(() => {
     console.log('Note saved');
     mongoose.connection.close();
   });
